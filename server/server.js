@@ -12,7 +12,7 @@ app.use(cookieParser())
 
 
 //routes
-app.use('/api', require('./server/routes/authRoute') )
+app.use('/api', require('./routes/authRoute') )
 
 
 mongoose.connect(process.env.DB_URL,{
